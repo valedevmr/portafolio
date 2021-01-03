@@ -1,0 +1,147 @@
+header{
+    margin: 0;
+    padding: o;
+    font-family: 'Poppins', sans-serif !important;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    transition: .5s ease-in;
+    z-index: 100;
+    
+}
+.logotipo .img{
+    width: 80px;
+    height: 100%;
+    padding-left: 20px; 
+}
+.logotipo a{
+    display: inline-block;
+    height: 50px;
+    
+}
+.navbar{
+    
+    height: 50px;
+    padding: 0 0;
+    margin: 0;
+    width: 90%;
+    margin: auto;
+   display: flex;
+   justify-content: space-between;
+}
+.menu{
+    
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*.menucolorD li a{
+    color: rgb(255, 255, 255);
+   
+}*/
+.menucolorD li a{
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+   
+}
+
+.menucolordark li a{
+    color: rgb(255, 255, 255);
+}
+
+.logotipo{
+    width: 50%;
+    height: 100%;
+    
+}
+
+@media screen and  (max-width:768px){
+    header{
+        background-color: rgb(0, 0, 22);
+        
+    }
+    .menu{
+      
+        position: fixed;
+        background-color: rgb(0, 0, 22);
+        width: 100%;
+        height: 92.5vh;
+        flex-direction: column;
+        top: 48px;
+        clip-path: circle(10px at 90% -10%);
+        -webkit-clip-path:circle(10px at 90% -10%);
+        transition: all .5s ease-out;
+    }
+    .menu.open{
+       
+        clip-path: circle(120vh at 90% -10%);
+        -webkit-clip-path:circle(120vh at 90% -10%);
+        
+    }
+    .navbar{
+        width: 100%;
+        position: relative;
+        
+    }
+    .line{
+        width: 30px;
+        height: 3px;
+        margin-top: 7px;
+        background-color: white;
+    }
+    .menuH{
+        position: absolute;
+        cursor: pointer;
+        right: 7%;
+        top: 40%;
+        transform: translateY(-50%);
+    }
+    .menu li {
+        align-items: inherit;
+        padding: 0 0;
+        padding: 0 0;
+        background-color: transparent;
+    }
+}
+
+
+@media (min-width:770px){
+    .menu li {
+        display: flex;
+        width: 25%;
+        height: 100%;
+    
+    }
+    .menu li a{
+        
+        width: 100%;
+        height: 100%;
+        z-index: 1 !important;
+        text-align: center;
+        line-height: 3rem;
+        transition: .5s ease-in;
+        text-decoration: none;
+        
+    }
+    .menucolorD li:hover a{
+        clip-path: inset( 0 0 0 0);
+        color: black;
+        background-color: rgb(255, 255, 255);
+
+    }
+    .menucolordark li:hover a{
+        clip-path: inset( 0 0 0 0);
+        color: black;
+        background-color: rgb(255, 255, 255);
+
+    }
+    
+}
