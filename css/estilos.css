@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: .9rem;
+}
+.btn{
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 0 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: .3s linear;
+    
+    line-height:2em;
+}
+.btn-green{
+    background-color: rgb(105, 13, 1);
+    color: white;
+}
+.btn:hover{
+    background-color: white;
+    color: rgb(105, 13, 1);
+    border: 1px solid rgb(105, 13, 1);
+}
+.img{
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    width: 80%;
+    height: 100%;
+}
+.flex{
+    display: flex;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.flex-even{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    
+}
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+.flex-colum{
+    flex-direction: column;
+}
+.title{
+    font-family: 'Poppins', sans-serif !important;
+    color: rgba(0, 0, 0);
+    border-bottom: 2px solid rgb(83, 1, 1);
+    width: 50%;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+#portafolio,
+#skills,
+#contacto{
+    padding: 60px 0;
+    width: 100%;
+    margin: auto;
+}
+
+/*estilode foto de perfil y texto animado*/
+
+#inicio{
+    background-image: url(../img/f5.jpg);
+    width: 100%;
+    height: 100vh;  
+}
+.containDes{
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    height: 60vh;
+    padding: 25px 0;
+    background-color: rgba(0, 0, 0, 0.445);
+    border-radius: 5px 5px 10px 10px;
+}
+.foto{
+    width: 30%;
+    height: 70%;
+    flex-wrap: wrap;
+}
+.foto div{
+    height: 35vh;
+    width: 35vh;
+    background-image: url(../img/img.png);
+    border-radius: 50%;
+}
+.llaves{
+    width: 30%;
+    height: 70%;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.llaves h2{
+    font-family: monospace;
+    font-weight: lighter;
+    color: white;
+    font-size: 25vh;
+    text-align: center;
+}
+
+.letters{
+    width: 70%;
+    height: 30%;
+    color: white;
+    text-align: center;
+}
+/*elementos de Portafolio*/
+.evidencia{
+    width: 26%;
+    height: 350px;
+    border: 1px solid rgb(105, 13, 1);
+    margin: 0 2% 30px 2%;
+
+}
+.screen{
+    width: 100%;
+    height: 45%;
+    border-bottom: 1px solid rgb(177, 21, 21);
+}
+.screen img{
+    width: 100%;
+    height: 100%;
+}
+.info{
+    width: 100%;
+    height: 50%;
+    margin-bottom: 5%;
+}
+.info > div:first-of-type{
+    width: 90%;
+    height: 50%;
+    text-align: center;
+   
+}
+.ver{
+    width: 90%;
+    height: 50%;
+    align-items: center;
+}
+
+/*elementos de skills*/
+
+#skills .cajitas{
+    width: 14%;
+    height: 140px;
+    margin: 50px;
+    border: 1px solid rgb(177, 21, 21);
+    border-radius: 5px;
+
+}
+.cajitas .tamanio{
+    width: 100%;
+    height: 100%;
+}
+
+/**/
+#contacto .container > div{
+    height: 70px;
+    width: 27%;
+    padding: 40px 1%;
+}
+#contacto .container{
+    width: 75%;
+    margin-bottom: 10px;
+}
+.first{
+    width: 20%;
+    height: 100%;
+    
+}
+
+.second{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconocontact{
+    margin-bottom: 60px !important;
+}
+
+
+/*footer*/
+.footer{
+    width: 100%;
+    background-color: rgba(0, 0, 19);
+    color: white;
+    height: 60px;
+
+   
+}
+.footer p{
+    font-family: 'Poppins', sans-serif !important;
+    font-size: .9rem;
+}
+.leyend{
+    width: 60%;
+}
+.second a{
+    color: rgba(0, 0, 19);
+}
+.foocontainer{
+    height: 100%;
+    margin: auto;
+    width: 70%;
+}
+.leyend .img{
+    width: 80px;
+
+}
+/**/
+@media (min-width:1380px){
+    .foto div{
+        height: 27vh;
+        width: 40vh;
+        background-image: url(../img/img.png);
+        border-radius: 50%;
+    }
+}
+@media (max-width: 576px){
+    
+    .texto{
+        font-size: 1.3rem !important;
+    }
+
+    .letters{
+        width: 90%;
+        height: 30%;
+        text-align: center;
+    }
+   /*elementos de Portafolio*/
+
+    .evidencia{
+        width: 100% !important;
+        height: 350px;
+        border: 1px solid rgb(105, 13, 1);
+        margin: 0 2% 30px 2%;
+
+    }
+    #skills .container{
+        width: 100% !important;
+    }
+    #skills .cajitas{
+        width: 30% !important;
+        height: 110px;
+        margin: 20px 10px;
+    }
+    /*CONTACTO*/
+   #contacto .container > div{
+        width: 100% !important;
+        padding: 20px 1% !important;
+    }
+    #contacto .container{
+        margin-bottom: 0px !important;
+    }
+    .first{
+        width: 25% !important;
+        
+    }
+    
+    .second{
+        width: 75% !important;
+        
+    }
+    .leyend .img{
+        width: 80px;
+        padding: 0 0 20px 0 !important;
+    
+    }
+   
+   
+
+}
+@media (max-width: 768px){
+            
+    .title{
+        width: 70%;
+    }
+    /*estilos de foto de perfil y textos animados*/
+    .containDes{
+        width: 90%;
+        height: 55vh;
+        
+    }
+    .foto{
+        margin-top: 20px;
+        width: 60%;
+        height: 65%;
+        flex-wrap: wrap;
+    }
+    
+    .llaves{
+        width: 15%;
+        height: 70%;     
+    }
+    .llaves h2{
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+    .texto{
+        font-size: 2rem;
+    }
+
+    .letters{
+        width: 90%;
+        height: 30%;
+        text-align: center;
+    }
+   /*elementos de Portafolio*/
+
+    .evidencia{
+        width: 45%;
+    }
+    #skills .container{
+        width: 90%;
+    }
+    #skills .cajitas{
+        width: 25%;
+        height: 120px;
+        margin: 20px 10px;
+    }
+    /*elementos contacto*/
+    #contacto .container > div{
+        height: 70px;
+        width: 40%;
+        padding: 40px 1%;
+    }
+   
+    /*footer*/
+    .footer{
+        width: 100%;
+        height: auto;  
+    }
+    .leyend{
+        width: 100%;
+        box-sizing: content-box !important;
+        padding: 100px auto;
+    }
+    
+    .foocontainer{
+        width: 100%;
+    }
+    .leyend .img{
+        width: 80px;
+        padding: 20px 0 ;
+    
+    }
+    .derechos{
+        text-align: center;
+        padding: 20px 0;
+    }
+
+}
